@@ -266,11 +266,28 @@
                                                                     <textarea rows="5" cols="5" class="form-control"
                                                                         placeholder=""></textarea>
                                                                 </div>
-
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row">
 
+                                                                <div class="col-2"></div>
+                                                                <div class="col">
+                                                                    <button type="button"
+                                                                        class="btn btn-primary waves-effect waves-light ">申請</button>
+                                                                    <button type="button"
+                                                                        class="btn btn-primary waves-effect waves-light ">取り下げ</button>
+                                                                    <button type="button"
+                                                                        class="btn btn-primary waves-effect waves-light ">下書き保存</button>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
                                                 </div>
 
                                             </div>
@@ -280,8 +297,8 @@
                                             <div class="col card">
                                                 <div class="card-block">
                                                     <div class="box-action mb-3">
-                                                        <button class="btn btn-success btn-outline-success text-center">
-                                                            <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                                                        <button class="btn btn-success btn-outline-success text-center ">
+                                                            <i class="fa fa-cloud-download fa-2x" aria-hidden="true"></i>
                                                         </button>
                                                     </div>
                                                     <table class="table table-bordered table-customize">
@@ -304,7 +321,7 @@
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr>
+                                                            <tr data-toggle="modal" data-target="#large-Modal">
                                                                 <td scope="row">
                                                                     <input type="checkbox">
                                                                 </td>
@@ -322,7 +339,7 @@
                                                                 <td>利用する</td>
                                                                 <td>利用する</td>
                                                             </tr>
-                                                            <tr>
+                                                            <tr data-toggle="modal" data-target="#large-Modal">
                                                                 <td scope="row">
                                                                     <input type="checkbox">
                                                                 </td>
@@ -340,7 +357,7 @@
                                                                 <td>利用する</td>
                                                                 <td>利用する</td>
                                                             </tr>
-                                                            <tr>
+                                                            <tr data-toggle="modal" data-target="#large-Modal">
                                                                 <td scope="row">
                                                                     <input type="checkbox">
                                                                 </td>
@@ -360,6 +377,272 @@
                                                             </tr>
                                                         </tbody>
                                                     </table>
+                                                    <div class="modal fade" id="large-Modal" tabindex="-1"
+                                                        role="dialog">
+                                                        <div class="modal-dialog modal-lg" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h4 class="modal-title">作成</h4>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="row mb-2">
+                                                                        <div class="col-4">
+                                                                            <span class="ml-3">申請内容</span>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <select name="select"
+                                                                                class="form-control form-control-default">
+                                                                                <option value="opt1">ユーザー情報変更申請
+                                                                                </option>
+                                                                            </select>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="row mb-2">
+                                                                        <div class="col-4">
+                                                                            <span class="ml-3">
+                                                                                発令日
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <div class="card-block accordion-block">
+                                                                                <div class="accordion-box"
+                                                                                    id="single-open">
+                                                                                    <a class="accordion-msg">基本情報</a>
+                                                                                    <div class="accordion-desc">
+                                                                                        <div class="row mb-2">
+                                                                                            <div class="col-4">
+                                                                                                <span class="ml-3">
+                                                                                                    メールアドレス
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <input type="text"
+                                                                                                    class="form-control">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mb-2">
+                                                                                            <div class="col-4">
+                                                                                                <span class="ml-3">
+                                                                                                    姓（主言語）
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <input type="text"
+                                                                                                    class="form-control">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mb-2">
+                                                                                            <div class="col-4">
+                                                                                                <span class="ml-3">
+                                                                                                    名（主言語）
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <input type="text"
+                                                                                                    class="form-control">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mb-2">
+                                                                                            <div class="col-4">
+                                                                                                <span class="ml-3">
+                                                                                                    社員番号
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <input type="text"
+                                                                                                    class="form-control">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mb-2">
+                                                                                            <div class="col-4">
+                                                                                                <span class="ml-3">
+                                                                                                    所属部門
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <select name="select"
+                                                                                                    class="form-control form-control-default">
+                                                                                                    <option
+                                                                                                        value="opt1">
+                                                                                                    </option>
+                                                                                                </select>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mb-2">
+                                                                                            <div class="col-4">
+                                                                                                <span class="ml-3">
+                                                                                                    雇用形態
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <select name="select"
+                                                                                                    class="form-control form-control-default">
+                                                                                                    <option
+                                                                                                        value="opt1">
+                                                                                                    </option>
+                                                                                                </select>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mb-2">
+                                                                                            <div class="col-4">
+                                                                                                <span class="ml-3">
+                                                                                                    有効期限
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <input type="text"
+                                                                                                    class="form-control">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <a
+                                                                                        class="accordion-msg">システム利用権限</a>
+                                                                                    <div class="accordion-desc">
+                                                                                        <div class="row mb-3">
+                                                                                            <div class="col-4">
+                                                                                                <span class="ml-3">
+                                                                                                    MS365利用
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <input type="checkbox"
+                                                                                                    class="form-control ">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mb-3">
+                                                                                            <div class="col-4">
+                                                                                                <span class="ml-3">
+                                                                                                    BOX利用
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <input type="checkbox"
+                                                                                                    class="form-control ">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mb-3">
+                                                                                            <div class="col-4">
+                                                                                                <span class="ml-3">
+                                                                                                    Google Workspace利用
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <input type="checkbox"
+                                                                                                    class="form-control ">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mb-3">
+                                                                                            <div class="col-4">
+                                                                                                <span class="ml-3">
+                                                                                                    Salaeforce利用
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <input type="checkbox"
+                                                                                                    class="form-control ">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mb-3">
+                                                                                            <div class="col-4">
+                                                                                                <span class="ml-3">
+                                                                                                    トラストログイン利用
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <input type="checkbox"
+                                                                                                    class="form-control ">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mb-3">
+                                                                                            <div class="col-4">
+                                                                                                <span class="ml-3">
+                                                                                                    AD利用
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <input type="checkbox"
+                                                                                                    class="form-control ">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mb-3">
+                                                                                            <div class="col-4">
+                                                                                                <span class="ml-3">
+                                                                                                    システム01利用
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <input type="checkbox"
+                                                                                                    class="form-control ">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mb-3">
+                                                                                            <div class="col-4">
+                                                                                                <span class="ml-3">
+                                                                                                    システム02利用
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <input type="checkbox"
+                                                                                                    class="form-control ">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <a class="accordion-msg">カスタム項目</a>
+                                                                                    <div class="accordion-desc">
+                                                                                        <div class="row mb-2">
+                                                                                            <div class="col-4">
+                                                                                                <span class="ml-3">
+                                                                                                    カスタム1
+
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <input type="text"
+                                                                                                    class="form-control ">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mb-2">
+                                                                                            <div class="col-4">
+                                                                                                <span class="ml-3">
+                                                                                                    カスタム2
+
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <input type="text"
+                                                                                                    class="form-control ">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button"
+                                                                        class="btn btn-default waves-effect "
+                                                                        data-dismiss="modal">閉じる</button>
+                                                                    <button type="button"
+                                                                        class="btn btn-default waves-effect "
+                                                                        data-dismiss="modal">クリア</button>
+                                                                    <button type="button"
+                                                                        class="btn btn-primary waves-effect waves-light ">確定</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
                                             </div>
@@ -396,6 +679,7 @@
 
     <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript" src="../files/bower_components/chart.js/js/Chart.js">
     </script>
+    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript" src="../files/assets/pages/accordion/accordion.js"></script>
 
     <script src="../files/assets/pages/widget/amchart/amcharts.js" type="165c8a4d8f5d6b9e03fc7c17-text/javascript">
     </script>
