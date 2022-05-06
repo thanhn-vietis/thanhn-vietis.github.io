@@ -63,7 +63,7 @@ p {
 }
 
 .main-body .page-wrapper .page-header {
-    margin-bottom: 30px
+    /* margin-bottom: 30px */
 }
 
 .main-body .page-wrapper .page-header-title {
@@ -8189,7 +8189,7 @@ table tbody .border-bottom-info td {
 .pcoded-main-container {
     display: block;
     position: relative;
-    background: #f1e3ff;
+    background: #f6f7fb;
     min-height: calc(100vh - 56px)
 }
 
@@ -25786,4 +25786,14 @@ body.dark #styleSelector .form-control {
 }
 .customize-table th, .customize-table td{
     border: 1px solid #fff;
+}
+
+.password-policy{
+    border: 1px dashed #d4d5d7;
+    border-radius: 0.3rem;
+    padding: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+.password-policy h6{
+    font-weight: 600;
 }
