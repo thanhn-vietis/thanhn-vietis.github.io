@@ -12234,7 +12234,7 @@ body.menu-bottom #collapse-menu {
 }
 
 .btn i {
-    margin-right: 5px
+    /* margin-right: 5px */
 }
 
 .btn.btn-icon {
@@ -25796,4 +25796,16 @@ body.dark #styleSelector .form-control {
 }
 .password-policy h6{
     font-weight: 600;
+}
+.table-customize thead tr th
+{
+    background:#551b77 ;
+    color: #fff;
+    border: 1px solid #551b77;
+
+}
+
+.table-customize tbody tr td{
+
+    border: 1px solid #551b77;
 }
