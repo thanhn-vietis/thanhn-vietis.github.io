@@ -1,0 +1,9 @@
+'use strict';(function(){CKEDITOR.plugins.add('uploadimage',{requires:'uploadwidget',onLoad:function(){CKEDITOR.addCss('.cke_upload_uploading img{'+
+'opacity: 0.3'+
+'}');},init:function(editor){if(!CKEDITOR.plugins.clipboard.isFileApiSupported){return;}
+var fileTools=CKEDITOR.fileTools,uploadUrl=fileTools.getUploadUrl(editor.config,'image');if(!uploadUrl){CKEDITOR.error('uploadimage-config');return;}
+fileTools.addUploadWidget(editor,'uploadimage',{supportedTypes:/image\/(jpeg|png|gif|bmp)/,uploadUrl:uploadUrl,fileToElement:function(){var img=new CKEDITOR.dom.element('img');img.setAttribute('src',loadingImage);return img;},parts:{img:'img'},onUploading:function(upload){this.parts.img.setAttribute('src',upload.data);},onUploaded:function(upload){var $img=this.parts.img.$,width=upload.responseData.width||$img.naturalWidth,height=upload.responseData.height||$img.naturalHeight;this.replaceWith('<img src="'+upload.url+'" '+
+'width="'+width+'" '+
+'height="'+height+'">');}});editor.on('paste',function(evt){if(!evt.data.dataValue.match(/<img[\s\S]+data:/i)){return;}
+var data=evt.data,tempDoc=document.implementation.createHTMLDocument(''),temp=new CKEDITOR.dom.element(tempDoc.body),imgs,img,i;temp.data('cke-editable',1);temp.appendHtml(data.dataValue);imgs=temp.find('img');for(i=0;i<imgs.count();i++){img=imgs.getItem(i);var isDataInSrc=img.getAttribute('src')&&img.getAttribute('src').substring(0,5)=='data:',isRealObject=img.data('cke-realelement')===null;if(isDataInSrc&&isRealObject&&!img.data('cke-upload-id')&&!img.isReadOnly(1)){var loader=editor.uploadRepository.create(img.getAttribute('src'));loader.upload(uploadUrl);fileTools.markElement(img,'uploadimage',loader.id);fileTools.bindNotifications(editor,loader);}}
+data.dataValue=temp.getHtml();});}});var loadingImage='data:image/gif;base64,R0lGODlhDgAOAIAAAAAAAP///yH5BAAAAAAALAAAAAAOAA4AAAIMhI+py+0Po5y02qsKADs=';})();

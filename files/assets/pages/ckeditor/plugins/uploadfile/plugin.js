@@ -1,0 +1,3 @@
+'use strict';(function(){CKEDITOR.plugins.add('uploadfile',{requires:'uploadwidget,link',init:function(editor){if(!CKEDITOR.plugins.clipboard.isFileApiSupported){return;}
+var fileTools=CKEDITOR.fileTools,uploadUrl=fileTools.getUploadUrl(editor.config);if(!uploadUrl){CKEDITOR.error('uploadfile-config');return;}
+fileTools.addUploadWidget(editor,'uploadfile',{uploadUrl:fileTools.getUploadUrl(editor.config),fileToElement:function(file){var a=new CKEDITOR.dom.element('a');a.setText(file.name);a.setAttribute('href','#');return a;},onUploaded:function(upload){this.replaceWith('<a href="'+upload.url+'" target="_blank">'+upload.fileName+'</a>');}});}});})();
