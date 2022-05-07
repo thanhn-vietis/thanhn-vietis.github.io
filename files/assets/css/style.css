@@ -25809,3 +25809,64 @@ body.dark #styleSelector .form-control {
 
     border: 1px solid #551b77;
 }
+.box-action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ba-right{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.dataTables_length select {
+    width: 75px ;
+    display: inline-block;
+}
+.total-record-page{
+    line-height: 2.5rem;
+}
+.ele-filter{
+    width: 290px;
+
+    margin-left: 1rem;
+}
+.group-filter  .input-gf{
+    width: 80%;
+    display: flex;
+}
+.group-filter .title-gf{
+    width: 150px;
+}
+.group-filter{
+    margin-bottom: 1rem;
+    width: 70%;
+    display: flex;
+    
+}
+
+.group-filter-2 .ele-filter{
+        line-height: 39px;
+}
+.group-filter-4 .ele-filter{
+    width: fit-content;
+}
+
+.group-filter-2 .ele-filter:nth-child(2){
+    width: 174px;
+}
+.group-filter-2 .ele-filter:nth-child(3){
+    width: 200px;
+}
+.group-filter-3 .ele-filter:nth-child(1)
+,.group-filter-2 .ele-filter:nth-child(1){
+        width: 263px;
+}
+.table-customize .active{
+    background-color: #fe9365;
+    color:#fff;
+}
+.col-form-label{
+    white-space: nowrap;
+}
