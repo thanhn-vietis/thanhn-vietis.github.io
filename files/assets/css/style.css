@@ -25870,3 +25870,7 @@ div.dataTables_length select {
 .col-form-label{
     white-space: nowrap;
 }
+#multi-open .fa-square-caret-down,.fa-square-caret-up{
+    font-size: 1.5em;
+    margin-right: 5px;
+}
