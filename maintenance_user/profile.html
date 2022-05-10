@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="#">
-    <meta name="keywords"   
+    <meta name="keywords"
         content="Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
     <meta name="author" content="#">
 
@@ -28,6 +28,10 @@
 
     <link rel="stylesheet" type="text/css" href="../files/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="../files/assets/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="../files/assets/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 </head>
 
 <body>
@@ -340,19 +344,19 @@
 
                                 <li class="active">
                                     <a href="profile.html">
-                                        <span class="pcoded-micon"><i class="feather icon-menu"></i></span>
+                                        <span class="pcoded-micon"><i class="feather icon-user"></i></span>
                                         <span class="pcoded-mtext">ログインユーザー情報</span>
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="change-password.html">
-                                        <span class="pcoded-micon"><i class="feather icon-menu"></i></span>
+                                        <span class="pcoded-micon"><i class="feather icon-lock"></i></span>
                                         <span class="pcoded-mtext">パスワード変更</span>
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="maintenance-info-user.html">
-                                        <span class="pcoded-micon"><i class="feather icon-menu"></i></span>
+                                        <span class="pcoded-micon"><i class="feather icon-users"></i></span>
                                         <span class="pcoded-mtext">ユーザー情報メンテナンス</span>
                                     </a>
                                 </li>
@@ -375,10 +379,19 @@
                                             </a>
                                         </li>
                                     </ul>
+                                    <ul class="pcoded-submenu">
+                                        <li class="">
+                                            <a href="decision.html">
+                                                <span class="pcoded-mtext">決裁</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
 
                             <ul class="pcoded-item pcoded-left-item">
+
+
                             </ul>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="">
@@ -436,11 +449,12 @@
                                                 </div>
                                                 <div class="card-block accordion-block">
                                                     <div class="accordion-box ui-accordion ui-widget ui-helper-reset"
-                                                        id="single-open" role="tablist">
+                                                        id="multi-open" role="tablist">
                                                         <a class="accordion-msg scale_active ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-active ui-state-active"
                                                             role="tab" id="ui-id-1" aria-controls="ui-id-2"
                                                             aria-selected="true" aria-expanded="true" tabindex="0"><span
-                                                                class="ui-accordion-header-icon ui-icon zmdi zmdi-chevron-up"></span>基本情報</a>
+                                                                class="ui-accordion-header-icon ui-icon zmdi zmdi-chevron-up "></span><i
+                                                                class=" fa fa-minus mr-2"></i>基本情報</a>
                                                         <div class="accordion-desc ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active"
                                                             style="" id="ui-id-2" aria-labelledby="ui-id-1"
                                                             role="tabpanel" aria-hidden="false">
@@ -477,7 +491,8 @@
                                                             role="tab" id="ui-id-3" aria-controls="ui-id-4"
                                                             aria-selected="false" aria-expanded="false"
                                                             tabindex="-1"><span
-                                                                class="ui-accordion-header-icon ui-icon zmdi zmdi-chevron-down"></span>
+                                                                class="ui-accordion-header-icon ui-icon zmdi zmdi-chevron-down"></span><i
+                                                                class="mr-2 fa  fa-plus"></i>
                                                             システム利用権限
                                                         </a>
                                                         <div class="accordion-desc ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content"
@@ -529,7 +544,8 @@
                                                             role="tab" id="ui-id-5" aria-controls="ui-id-6"
                                                             aria-selected="false" aria-expanded="false"
                                                             tabindex="-1"><span
-                                                                class="ui-accordion-header-icon ui-icon zmdi zmdi-chevron-down"></span>カスタム項目</a>
+                                                                class="ui-accordion-header-icon ui-icon zmdi zmdi-chevron-down"></span><i
+                                                                class="mr-2 fa  fa-plus"></i>カスタム項目</a>
                                                         <div class="accordion-desc ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content"
                                                             style="display: none;" id="ui-id-6"
                                                             aria-labelledby="ui-id-5" role="tabpanel"
@@ -537,7 +553,6 @@
                                                             <div class="row">
                                                                 <div class="col-5">
                                                                     <table class="table customize-table table-bordered">
-                                                                  
                                                                         <tbody>
                                                                             <tr>
                                                                                 <th>カスタム1</th>
@@ -551,7 +566,7 @@
                                                                                     02
                                                                                 </td>
                                                                             </tr>
-                                                                          
+
                                                                         </tbody>
                                                                     </table>
                                                                 </div>
@@ -577,44 +592,55 @@
 
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript" src="../files/bower_components/jquery/js/jquery.min.js">
-    </script>
-    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript"
-        src="../files/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
-    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript" src="../files/bower_components/popper.js/js/popper.min.js">
-    </script>
-    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript"
-        src="../files/bower_components/bootstrap/js/bootstrap.min.js"></script>
 
-    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript"
-        src="../files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
-    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript" src="../files/assets/pages/accordion/accordion.js"></script>
+    <script type="" src="../files/bower_components/jquery/js/jquery.min.js">
 
-    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript" src="../files/bower_components/modernizr/js/modernizr.js">
+    </script>
+    <script>
+        $(".accordion-msg").click(function () {
+            $(this)
+                .children("i")
+                .removeClass("mr-2 fa  fa-plus")
+                .addClass("mr-2 fa fa-minus");
+            $(".accordion-msg")
+                .not($(this))
+                .children("i")
+                .removeClass("mr-2 fa fa-minus")
+                .addClass("mr-2 fa  fa-plus");
+        });
+    </script>
+    <script type="" src="../files/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+    <script type="" src="../files/bower_components/popper.js/js/popper.min.js">
+    </script>
+    <script type="" src="../files/bower_components/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="" src="../files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+    <script type="" src="../files/assets/pages/accordion/accordion.js"></script>
+
+    <script type="" src="../files/bower_components/modernizr/js/modernizr.js">
     </script>
 
-    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript" src="../files/bower_components/chart.js/js/Chart.js">
+    <script type="" src="../files/bower_components/chart.js/js/Chart.js">
     </script>
 
-    <script src="../files/assets/pages/widget/amchart/amcharts.js" type="165c8a4d8f5d6b9e03fc7c17-text/javascript">
+    <script src="../files/assets/pages/widget/amchart/amcharts.js" type="">
     </script>
-    <script src="../files/assets/pages/widget/amchart/serial.js" type="165c8a4d8f5d6b9e03fc7c17-text/javascript">
+    <script src="../files/assets/pages/widget/amchart/serial.js" type="">
     </script>
-    <script src="../files/assets/pages/widget/amchart/light.js" type="165c8a4d8f5d6b9e03fc7c17-text/javascript">
+    <script src="../files/assets/pages/widget/amchart/light.js" type="">
     </script>
-    <script src="../files/assets/js/jquery.mCustomScrollbar.concat.min.js"
-        type="165c8a4d8f5d6b9e03fc7c17-text/javascript"></script>
-    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript" src="../files/assets/js/SmoothScroll.js"></script>
-    <script src="../files/assets/js/pcoded.min.js" type="165c8a4d8f5d6b9e03fc7c17-text/javascript"></script>
+    <script src="../files/assets/js/jquery.mCustomScrollbar.concat.min.js" type=""></script>
+    <script type="" src="../files/assets/js/SmoothScroll.js"></script>
+    <script src="../files/assets/js/pcoded.min.js" type=""></script>
 
-    <script src="../files/assets/js/vartical-layout.min.js" type="165c8a4d8f5d6b9e03fc7c17-text/javascript"></script>
-    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript" src="../files/assets/pages/dashboard/custom-dashboard.js">
-    </script>
-    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript" src="../files/assets/js/script.min.js"></script>
+    <script src="../files/assets/js/vartical-layout.min.js" type=""></script>
+    <!-- <script type="" src="../files/assets/pages/dashboard/custom-dashboard.js"></script> -->
+    <script type="" src="../files/assets/js/script.min.js"></script>
 
 
-    <script src="../files/assets/js/rocket-loader.min.js" data-cf-settings="165c8a4d8f5d6b9e03fc7c17-|49" defer="">
-    </script>
+    <script src="../files/assets/js/rocket-loader.min.js" data-cf-settings="165c8a4d8f5d6b9e03fc7c17-|49"
+        defer=""></script>
+
 </body>
 
 </html>
