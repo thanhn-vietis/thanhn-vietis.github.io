@@ -133,13 +133,16 @@
                                         <span class="pcoded-mtext">パスワード変更</span>
                                     </a>
                                 </li>
-                                <li class=" active">
+                                <li class="">
                                     <a href="maintenance-info-user.html">
                                         <span class="pcoded-micon"><i class="feather icon-menu"></i></span>
                                         <span class="pcoded-mtext">ユーザー情報メンテナンス</span>
                                     </a>
                                 </li>
-                                <li class="pcoded-hasmenu  ">
+                            </ul>
+
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="pcoded-hasmenu  pcoded-trigger">
                                     <a href="javascript:void(0)">
                                         <span class="pcoded-micon"><i class="feather icon-briefcase"></i></span>
                                         <span class="pcoded-mtext">ワークフロー</span>
@@ -150,7 +153,7 @@
                                                 <span class="pcoded-mtext">申請起票（ユーザー）</span>
                                             </a>
                                         </li>
-                                        <li class="">
+                                        <li class="active">
                                             <a href="confirm-status-apply.html">
                                                 <span class="pcoded-mtext">申請状況確認</span>
                                             </a>
@@ -164,15 +167,16 @@
 
 
                                 </li>
+
+                            </ul>
+                            <ul class="pcoded-item pcoded-left-item">
                                 <li class="">
                                     <a href="login.html">
                                         <span class="pcoded-micon"><i class="feather icon-log-out"></i></span>
                                         <span class="pcoded-mtext">ログアウト</span>
                                     </a>
                                 </li>
-
                             </ul>
-
 
                         </div>
                     </nav>
@@ -187,14 +191,14 @@
                                             <div class="card col-lg-12">
                                                 <div class="card-block caption-breadcrumb">
                                                     <div class="breadcrumb-header">
-                                                        <h5>ユーザー情報メンテナンス</h5>
+                                                        <h5>申請状況確認</h5>
                                                     </div>
                                                     <div class="page-header-breadcrumb">
                                                         <ul class="breadcrumb-title">
 
-                                                            <!-- <li class="breadcrumb-item"><a href="#!">ワークフロー</a>
-                                                            </li> -->
-                                                            <li class="breadcrumb-item"><a href="#!">ユーザー情報メンテナンス</a>
+                                                            <li class="breadcrumb-item"><a href="#!">ワークフロー</a>
+                                                            </li>
+                                                            <li class="breadcrumb-item"><a href="#!">申請状況確認</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -210,167 +214,32 @@
                                             <div class="col card">
                                                 <div class="card-block">
 
-
-                                                    <div class="group-filter">
-                                                        <div class="title-gf">
-                                                            文字列検索
-                                                        </div>
-                                                        <div class="input-gf">
-                                                            <div class="ele-filter">
-                                                                <div class="row ">
-                                                                    <div class="col-sm-3">
-                                                                        <label class="col-form-label">項目</label>
-                                                                    </div>
-                                                                    <div class="col-sm-8">
-                                                                        <select name="select" class="form-control ">
-                                                                            <option value="opt1"></option>
-                                                                            <option value="opt8">Type 8</option>
-                                                                        </select>
-                                                                    </div>
+                                                    <div class=" row">
+                                                        <div class="col-3">
+                                                            <div class="row ">
+                                                                <div class="col-sm-4">
+                                                                    <label class="col-form-label">申請対象組織</label>
+                                                                </div>
+                                                                <div class="col-sm-8">
+                                                                    <select name="select" class="form-control ">
+                                                                        <option value="opt1">技術部第1グループ</option>
+                                                                    </select>
                                                                 </div>
                                                             </div>
-                                                            <div class="ele-filter">
-                                                                <div class="row ">
-                                                                    <div class="col-sm-3">
-                                                                        <label class="col-form-label">検索値</label>
-                                                                    </div>
-                                                                    <div class="col-sm-8">
-                                                                        <input type="text" class="form-control">
-                                                                    </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="row ">
+                                                                <div class="col-sm-4">
+                                                                    <label class="col-form-label">状態</label>
+                                                                </div>
+                                                                <div class="col-sm-8">
+                                                                    <select name="select" class="form-control ">
+                                                                        <option value="opt1">全て</option>
+                                                                    </select>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-
-                                                    <div class="group-filter group-filter-2">
-                                                        <div class="title-gf">
-                                                            部門検索
-                                                        </div>
-                                                        <div class="input-gf">
-
-                                                            <div class="ele-filter">
-                                                                <select name="select" class="form-control ">
-                                                                    <option value="opt1"></option>
-                                                                    <option value="opt8">Type 8</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="ele-filter">
-                                                                <div
-                                                                    class="border-checkbox-group border-checkbox-group-default">
-                                                                    <input class="border-checkbox" type="checkbox"
-                                                                        id="checkbox0">
-                                                                    <label class="border-checkbox-label"
-                                                                        for="checkbox0">子組織を含めて検索</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="ele-filter">
-                                                                <div
-                                                                    class="border-checkbox-group border-checkbox-group-default">
-                                                                    <input class="border-checkbox" type="checkbox"
-                                                                        id="checkbox1">
-                                                                    <label class="border-checkbox-label"
-                                                                        for="checkbox1">兼務部門を含めて検索</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="group-filter group-filter-3">
-                                                        <div class="title-gf">
-                                                            権限検索
-                                                        </div>
-                                                        <div class="input-gf">
-                                                            <div class="ele-filter">
-                                                                <select name="select" class="form-control ">
-                                                                    <option value="opt1"></option>
-                                                                    <option value="opt8">Type 8</option>
-                                                                </select>
-                                                            </div>
-
-
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="group-filter">
-                                                        <div class="title-gf">
-                                                            日付検索
-                                                        </div>
-                                                        <div class="input-gf">
-                                                            <div class="ele-filter">
-                                                                <div class="row form-group">
-                                                                    <div class="col-sm-3">
-                                                                        <label class="col-form-label">項目</label>
-                                                                    </div>
-                                                                    <div class="col-sm-8">
-                                                                        <select name="select" class="form-control ">
-                                                                            <option value="opt1"></option>
-                                                                            <option value="opt8">Type 8</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="ele-filter">
-                                                                <div class="row form-group">
-                                                                    <div class="col-sm-3">
-                                                                        <label class="col-form-label">検索値</label>
-                                                                    </div>
-                                                                    <div class="col-sm-8">
-                                                                        <input type="date" class="form-control">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="group-filter group-filter-4">
-                                                        <div class="title-gf">
-                                                            ステータス検索
-                                                        </div>
-                                                        <div class="input-gf">
-
-
-                                                            <div class="ele-filter">
-                                                                <div
-                                                                    class="border-checkbox-group border-checkbox-group-default">
-                                                                    <input class="border-checkbox" type="checkbox"
-                                                                        id="checkbox2">
-                                                                    <label class="border-checkbox-label"
-                                                                        for="checkbox2">有効</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="ele-filter">
-                                                                <div
-                                                                    class="border-checkbox-group border-checkbox-group-default">
-                                                                    <input class="border-checkbox" type="checkbox"
-                                                                        id="checkbox3">
-                                                                    <label class="border-checkbox-label"
-                                                                        for="checkbox3">一時停止</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="ele-filter">
-                                                                <div
-                                                                    class="border-checkbox-group border-checkbox-group-default">
-                                                                    <input class="border-checkbox" type="checkbox"
-                                                                        id="checkbox4">
-                                                                    <label class="border-checkbox-label"
-                                                                        for="checkbox4">無効化</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="ele-filter">
-                                                                <div
-                                                                    class="border-checkbox-group border-checkbox-group-default">
-                                                                    <input class="border-checkbox" type="checkbox"
-                                                                        id="checkbox5">
-                                                                    <label class="border-checkbox-label"
-                                                                        for="checkbox5">有効期限切れ</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-
-
-
                                                 </div>
 
                                             </div>
@@ -383,11 +252,12 @@
                                                         <div class="ba-left">
 
                                                             <button data-toggle="tooltip" data-placement="top"
-                                                                title="CSVをエクスポート"
-                                                                class="btn btn-success btn-outline-success text-center ">
-                                                                <i class="fa fa-cloud-download fa-1x"
+                                                                title="消去"
+                                                                class="btn btn-danger btn-outline-danger text-center ">
+                                                                <i class="fa fa-minus-circle fa-1x"
                                                                     aria-hidden="true"></i>
                                                             </button>
+
                                                         </div>
                                                         <div class="ba-right">
 
@@ -399,66 +269,66 @@
                                                         <thead>
                                                             <tr>
                                                                 <th scope="col">#</th>
-                                                                <th scope="col">メールアドレス</th>
-                                                                <th scope="col">姓（主言語）</th>
-                                                                <th scope="col">名（主言語）</th>
-                                                                <th scope="col">社員番号</th>
-                                                                <th scope="col">所属部門</th>
+                                                                <th scope="col">申請ID</th>
+                                                                <th scope="col">申請日</th>
+                                                                <th scope="col">申請者</th>
+                                                                <th scope="col">申請対象組織</th>
+                                                                <th scope="col">対象</th>
+                                                                <th scope="col">次の承認者</th>
+                                                                <th scope="col">状態</th>
+                                                                <th scope="col">決済日</th>
 
-
-                                                                <th scope="col">役職</th>
-                                                                <th scope="col">雇用形態</th>
-                                                                <th scope="col">発令日</th>
-                                                                <th scope="col">削除フラグ</th>
-                                                                <th scope="col">有効期限</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr >
+                                                            <tr>
                                                                 <td scope="row">
-                                                                    <input type="checkbox">
+                                                                    <input type="checkbox" disabled>
                                                                 </td>
-                                                                <td data-toggle="modal" data-target="#large-Modal"> i.osaki001@idmtest.work</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">大崎</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">一郎</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">10001</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">技術部第1グループ</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">グループ長</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">正社員</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">2021/4/1</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">無効</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">2022/3/31</td>
+                                                                <td><a
+                                                                        href="confirm-status-apply-detail.html">202200090</a>
+                                                                </td>
+                                                                <td>2022/4/22</td>
+                                                                <td>上野　桃</td>
+                                                                <td>技術部第1グループ</td>
+                                                                <td>ユーザー</td>
+                                                                <td>大崎　一郎</td>
+                                                                <td class="text-center">
+                                                                    <span class="badge badge-success">承認済み</span>
+                                                                </td>
+                                                                <td>2022/4/26</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td scope="row">
+                                                                    <input type="checkbox" disabled>
+                                                                </td>
+                                                                <td><a href="confirm-status-apply-detail.html">2022000901</a></td>
+                                                                <td>2022/4/22</td>
+                                                                <td>上野　桃</td>
+                                                                <td>技術部第1グループ</td>
+                                                                <td>ユーザー</td>
+                                                                <td>大崎　一郎</td>
+                                                                <td class="text-center">
+                                                                    <span class="badge badge-danger">却下</span>
+                                                                </td>
+                                                                <td>2022/4/26</td>
                                                             </tr>
                                                             <tr>
                                                                 <td scope="row">
                                                                     <input type="checkbox">
                                                                 </td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">i.osaki001@idmtest.work</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">大崎</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">一郎</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">10001</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">技術部第1グループ</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">グループ長</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">正社員</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">2021/4/1</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">無効</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">2022/3/31</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td scope="row">
-                                                                    <input type="checkbox">
+                                                                <td><a href="confirm-status-apply-detail.html">2022000903</a></td>
+                                                                <td>2022/4/22</td>
+                                                                <td>上野　桃</td>
+                                                                <td>技術部第1グループ</td>
+                                                                <td>ユーザー</td>
+                                                                <td>大崎　一郎</td>
+                                                                <td class="text-center">
+                                                                    <span class="badge badge-secondary">下書き</span>
                                                                 </td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">i.osaki001@idmtest.work</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">大崎</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">一郎</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">10001</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">技術部第1グループ</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">グループ長</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">正社員</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">2021/4/1</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">無効</td>
-                                                                <td data-toggle="modal" data-target="#large-Modal">2022/3/31</td>
+                                                                <td>2022/4/26</td>
                                                             </tr>
+
                                                         </tbody>
                                                     </table>
                                                     <div class="row">
@@ -525,21 +395,29 @@
                                                 <div class="modal-dialog modal-lg" role="document">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <h4 class="modal-title">詳細</h4>
+                                                            <h4 class="modal-title">ユーザ詳細情報</h4>
                                                             <button type="button" class="close" data-dismiss="modal"
                                                                 aria-label="Close">
                                                                 <span aria-hidden="true">&times;</span>
                                                             </button>
                                                         </div>
                                                         <div class="modal-body">
-                                                            <!-- <div class="row mb-2">
+                                                            <div class="row mb-2">
                                                                 <div class="col-4">
                                                                     <span class="ml-3">申請内容</span>
                                                                 </div>
                                                                 <div class="col">
-                                                                    <select name="select"
-                                                                        class="form-control ">
+                                                                    <select name="select" class="form-control ">
+                                                                        <option value="opt1">ユーザー登録申請
+                                                                        </option>
                                                                         <option value="opt1">ユーザー情報変更申請
+
+                                                                        </option>
+                                                                        <option value="opt1">システム利用権限申請
+
+                                                                        </option>
+                                                                        <option value="opt1">ユーザー削除申請
+
                                                                         </option>
                                                                     </select>
                                                                 </div>
@@ -554,12 +432,12 @@
                                                                 <div class="col">
                                                                     <input type="text" class="form-control">
                                                                 </div>
-                                                            </div> -->
+                                                            </div>
                                                             <div class="row">
                                                                 <div class="col">
                                                                     <div class="card-block accordion-block">
                                                                         <div class="accordion-box" id="single-open">
-                                                                            <a class="accordion-msg"><i class=" fa fa-minus mr-2"></i>基本情報</a>
+                                                                            <a class="accordion-msg">基本情報</a>
                                                                             <div class="accordion-desc">
                                                                                 <div class="row mb-2">
                                                                                     <div class="col-4">
@@ -568,8 +446,8 @@
                                                                                         </span>
                                                                                     </div>
                                                                                     <div class="col">
-                                                                                        j.gotanda002@idmtest.work
-
+                                                                                        <input type="text"
+                                                                                            class="form-control">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="row mb-2">
@@ -601,7 +479,8 @@
                                                                                         </span>
                                                                                     </div>
                                                                                     <div class="col">
-                                                                                        10001
+                                                                                        <input type="text"
+                                                                                            class="form-control">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="row mb-2">
@@ -613,9 +492,7 @@
                                                                                     <div class="col">
                                                                                         <select name="select"
                                                                                             class="form-control ">
-                                                                                            <option value="">
-                                                                                                技術部第1グループ
-
+                                                                                            <option value="opt1">
                                                                                             </option>
                                                                                         </select>
                                                                                     </div>
@@ -627,18 +504,11 @@
                                                                                         </span>
                                                                                     </div>
                                                                                     <div class="col">
-                                                                                        派遣社員
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="row mb-2">
-                                                                                    <div class="col-4">
-                                                                                        <span class="ml-3">
-                                                                                            発令日
-                                                                                        </span>
-                                                                                    </div>
-                                                                                    <div class="col">
-                                                                                        <input type="input"
-                                                                                            class="form-control">
+                                                                                        <select name="select"
+                                                                                            class="form-control ">
+                                                                                            <option value="opt1">
+                                                                                            </option>
+                                                                                        </select>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="row mb-2">
@@ -648,13 +518,13 @@
                                                                                         </span>
                                                                                     </div>
                                                                                     <div class="col">
-                                                                                        <input type="date"
+                                                                                        <input type="text"
                                                                                             class="form-control">
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
 
-                                                                            <a class="accordion-msg"> <i class=" fa fa-plus mr-2"></i>システム利用権限</a>
+                                                                            <a class="accordion-msg">システム利用権限</a>
                                                                             <div class="accordion-desc">
                                                                                 <div class="row mb-3">
                                                                                     <div class="col-4">
@@ -663,8 +533,8 @@
                                                                                         </span>
                                                                                     </div>
                                                                                     <div class="col">
-                                                                                        利用する
-
+                                                                                        <input type="checkbox"
+                                                                                            class="form-control ">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="row mb-3">
@@ -674,8 +544,8 @@
                                                                                         </span>
                                                                                     </div>
                                                                                     <div class="col">
-                                                                                        利用する
-
+                                                                                        <input type="checkbox"
+                                                                                            class="form-control ">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="row mb-3">
@@ -685,8 +555,8 @@
                                                                                         </span>
                                                                                     </div>
                                                                                     <div class="col">
-                                                                                        利用する
-
+                                                                                        <input type="checkbox"
+                                                                                            class="form-control ">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="row mb-3">
@@ -696,8 +566,8 @@
                                                                                         </span>
                                                                                     </div>
                                                                                     <div class="col">
-                                                                                        利用する
-
+                                                                                        <input type="checkbox"
+                                                                                            class="form-control ">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="row mb-3">
@@ -707,8 +577,8 @@
                                                                                         </span>
                                                                                     </div>
                                                                                     <div class="col">
-                                                                                        利用する
-
+                                                                                        <input type="checkbox"
+                                                                                            class="form-control ">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="row mb-3">
@@ -718,8 +588,8 @@
                                                                                         </span>
                                                                                     </div>
                                                                                     <div class="col">
-                                                                                        利用する
-
+                                                                                        <input type="checkbox"
+                                                                                            class="form-control ">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="row mb-3">
@@ -729,7 +599,8 @@
                                                                                         </span>
                                                                                     </div>
                                                                                     <div class="col">
-                                                                                        01
+                                                                                        <input type="checkbox"
+                                                                                            class="form-control ">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="row mb-3">
@@ -739,11 +610,12 @@
                                                                                         </span>
                                                                                     </div>
                                                                                     <div class="col">
-                                                                                        02
+                                                                                        <input type="checkbox"
+                                                                                            class="form-control ">
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <a class="accordion-msg"><i class=" fa fa-plus mr-2"></i>カスタム項目</a>
+                                                                            <a class="accordion-msg">カスタム項目</a>
                                                                             <div class="accordion-desc">
                                                                                 <div class="row mb-2">
                                                                                     <div class="col-4">
@@ -776,10 +648,6 @@
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer">
-                                                            <button type="button" class="btn btn-default waves-effect "
-                                                                data-dismiss="modal">閉じる</button>
-                                                            <button type="button" class="btn btn-default waves-effect "
-                                                                data-dismiss="modal">クリア</button>
                                                             <button type="button"
                                                                 class="btn btn-primary waves-effect waves-light ">確定</button>
                                                         </div>
@@ -805,57 +673,40 @@
 
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script type="" src="../files/bower_components/jquery/js/jquery.min.js">
+    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript" src="../files/bower_components/jquery/js/jquery.min.js">
     </script>
-    <script>
-        $(".accordion-msg").click(function () {
-            console.log(12);
-            $(this)
-                .children("i")
-                .removeClass("mr-2 fa  fa-plus")
-                .addClass("mr-2 fa fa-minus");
-            $(".accordion-msg")
-                .not($(this))
-                .children("i")
-                .removeClass("mr-2 fa fa-minus")
-                .addClass("mr-2 fa  fa-plus");
-        });
-    </script>
-
- 
-    <script type=""
+    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript"
         src="../files/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
-        
-    <script type="" src="../files/bower_components/popper.js/js/popper.min.js">
+    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript" src="../files/bower_components/popper.js/js/popper.min.js">
     </script>
-    <script type=""
+    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript"
         src="../files/bower_components/bootstrap/js/bootstrap.min.js"></script>
 
-    <script type=""
+    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript"
         src="../files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
 
-    <script type="" src="../files/bower_components/modernizr/js/modernizr.js">
+    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript" src="../files/bower_components/modernizr/js/modernizr.js">
     </script>
 
-    <script type="" src="../files/bower_components/chart.js/js/Chart.js">
+    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript" src="../files/bower_components/chart.js/js/Chart.js">
     </script>
-    <script type="" src="../files/assets/pages/accordion/accordion.js"></script>
+    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript" src="../files/assets/pages/accordion/accordion.js"></script>
 
-    <script src="../files/assets/pages/widget/amchart/amcharts.js" type="">
+    <script src="../files/assets/pages/widget/amchart/amcharts.js" type="165c8a4d8f5d6b9e03fc7c17-text/javascript">
     </script>
-    <script src="../files/assets/pages/widget/amchart/serial.js" type="">
+    <script src="../files/assets/pages/widget/amchart/serial.js" type="165c8a4d8f5d6b9e03fc7c17-text/javascript">
     </script>
-    <script src="../files/assets/pages/widget/amchart/light.js" type="">
+    <script src="../files/assets/pages/widget/amchart/light.js" type="165c8a4d8f5d6b9e03fc7c17-text/javascript">
     </script>
     <script src="../files/assets/js/jquery.mCustomScrollbar.concat.min.js"
-        type=""></script>
-    <script type="" src="../files/assets/js/SmoothScroll.js"></script>
-    <script src="../files/assets/js/pcoded.min.js" type=""></script>
+        type="165c8a4d8f5d6b9e03fc7c17-text/javascript"></script>
+    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript" src="../files/assets/js/SmoothScroll.js"></script>
+    <script src="../files/assets/js/pcoded.min.js" type="165c8a4d8f5d6b9e03fc7c17-text/javascript"></script>
 
-    <script src="../files/assets/js/vartical-layout.min.js" type=""></script>
-    <script type="" src="../files/assets/pages/dashboard/custom-dashboard.js">
+    <script src="../files/assets/js/vartical-layout.min.js" type="165c8a4d8f5d6b9e03fc7c17-text/javascript"></script>
+    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript" src="../files/assets/pages/dashboard/custom-dashboard.js">
     </script>
-    <script type="" src="../files/assets/js/script.min.js"></script>
+    <script type="165c8a4d8f5d6b9e03fc7c17-text/javascript" src="../files/assets/js/script.min.js"></script>
 
 
     <script src="../files/assets/js/rocket-loader.min.js" data-cf-settings="165c8a4d8f5d6b9e03fc7c17-|49" defer="">
