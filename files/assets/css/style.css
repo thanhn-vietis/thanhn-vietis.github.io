@@ -1401,7 +1401,7 @@ a.bg-default:hover {
 
 a.bg-primary:focus,
 a.bg-primary:hover {
-    background-color: #01dbdf !important;
+    background-color: #8038ab !important;
     color: #fff
 }
 
@@ -6124,8 +6124,8 @@ a[data-toggle=lightbox] .img-fluid {
 }
 
 .label-primary {
-    background: -webkit-gradient(linear, left top, right top, from(#551b77), to(#01dbdf));
-    background: linear-gradient(to right, #551b77, #01dbdf)
+    background: -webkit-gradient(linear, left top, right top, from(#551b77), to(#8038ab));
+    background: linear-gradient(to right, #551b77, #8038ab)
 }
 
 .label-warning {
@@ -12406,8 +12406,8 @@ body.menu-bottom #collapse-menu {
 .btn-primary:hover,
 .sweet-alert button.confirm:hover,
 .wizard>.actions a:hover {
-    background-color: #01dbdf;
-    border-color: #01dbdf
+    background-color: #8038ab;
+    border-color: #8038ab
 }
 
 .btn-primary:active,
@@ -12426,7 +12426,7 @@ body.menu-bottom #collapse-menu {
     -webkit-box-shadow: none;
     box-shadow: none;
     color: #fff;
-    background-color: #01dbdf
+    background-color: #8038ab
 }
 
 .btn-primary.disabled,
@@ -12715,13 +12715,13 @@ body.menu-bottom #collapse-menu {
 }
 
 .btn-grd-primary {
-    background-image: -webkit-gradient(linear, left top, right top, from(#01dbdf), color-stop(51%, #016d6f), to(#01dbdf));
-    background-image: linear-gradient(to right, #01dbdf 0%, #016d6f 51%, #01dbdf 100%)
+    background-image: -webkit-gradient(linear, left top, right top, from(#8038ab), color-stop(51%, #016d6f), to(#8038ab));
+    background-image: linear-gradient(to right, #8038ab 0%, #016d6f 51%, #8038ab 100%)
 }
 
 .btn-grd-primary.hor-grd {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#01dbdf), color-stop(51%, #016d6f), to(#01dbdf));
-    background-image: linear-gradient(to top, #01dbdf 0%, #016d6f 51%, #01dbdf 100%)
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#8038ab), color-stop(51%, #016d6f), to(#8038ab));
+    background-image: linear-gradient(to top, #8038ab 0%, #016d6f 51%, #8038ab 100%)
 }
 
 .btn-grd-warning {
@@ -13640,13 +13640,13 @@ body.menu-bottom #collapse-menu {
 }
 
 .input-group-button .input-group-addon:hover {
-    background-color: #01dbdf;
-    border-color: #01dbdf
+    background-color: #8038ab;
+    border-color: #8038ab
 }
 
 .input-group-button .input-group-addon:hover .btn {
-    background-color: #01dbdf;
-    border-color: #01dbdf
+    background-color: #8038ab;
+    border-color: #8038ab
 }
 
 .input-group-dropdown [class*=btn-] {
@@ -15913,8 +15913,8 @@ table.footable-paging-center>tfoot>tr.footable-paging>td {
 }
 
 .bg-c-blue {
-    background: -webkit-gradient(linear, left top, right top, from(#551b77), to(#01dbdf));
-    background: linear-gradient(to right, #551b77, #01dbdf)
+    background: -webkit-gradient(linear, left top, right top, from(#551b77), to(#8038ab));
+    background: linear-gradient(to right, #551b77, #8038ab)
 }
 
 .bg-simple-c-blue {
@@ -15978,8 +15978,8 @@ table.footable-paging-center>tfoot>tr.footable-paging>td {
 }
 
 .bg-c-lite-green {
-    background: -webkit-gradient(linear, left top, right top, from(#551b77), to(#01dbdf));
-    background: linear-gradient(to right, #551b77, #01dbdf)
+    background: -webkit-gradient(linear, left top, right top, from(#551b77), to(#8038ab));
+    background: linear-gradient(to right, #551b77, #8038ab)
 }
 
 .bg-simple-c-lite-green {
@@ -23143,13 +23143,13 @@ pre.line-numbers>code {
 }
 
 .slider-selection.tick-slider-selection {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#01dbdf), to(#01dbdf));
-    background-image: linear-gradient(to bottom, #01dbdf 0%, #01dbdf 100%)
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#8038ab), to(#8038ab));
+    background-image: linear-gradient(to bottom, #8038ab 0%, #8038ab 100%)
 }
 
 .slider-tick.in-selection {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#01dbdf), to(#01dbdf));
-    background-image: linear-gradient(to bottom, #01dbdf 0%, #01dbdf 100%)
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#8038ab), to(#8038ab));
+    background-image: linear-gradient(to bottom, #8038ab 0%, #8038ab 100%)
 }
 
 .slider.slider-horizontal .slider-track {
